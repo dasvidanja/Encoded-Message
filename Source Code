@@ -22,7 +22,9 @@ void fun (string s){
          }
     //This should put a space inside of the array, but it doesn't for some reason 
        arr[counter]= "\n";
-       cout<< arr[counter];
+       
+       counter++;
+       
       
 }
 
@@ -51,7 +53,7 @@ int main()
      //Print Global variable   
     for(int i = 0; i<1000; i++){
         
-        //The space is not working, can't figure out why!
+        //New line for each separate word.
         if(arr[i] == " "){
         cout<<" "<<endl; }
         cout<<arr[i];
